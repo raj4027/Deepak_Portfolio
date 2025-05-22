@@ -1,84 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website Design</title>
-    <link rel="stylesheet" href="style.css">
-    <!----Font awesome cdn  font icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak Raj Gouda - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      color: #fff;
+    }
+
+    .wrapper {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      font-size: 30px;
+      margin-right: 10px;
+      color: #fff;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .hero-header .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .hero-pic img {
+      max-width: 300px;
+      border-radius: 10px;
+      border: 5px solid white;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      line-height: 1.6;
+    }
+
+    .btn-group a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background: #fff;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn-group a.active {
+      background: #ffcc00;
+    }
+
+    .btn-group a:hover {
+      background: #ffd700;
+    }
+
+    .social a {
+      color: white;
+      margin: 10px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social a:hover {
+      color: #ffcc00;
+    }
+
+    .section {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  </style>
 </head>
+
 <body>
-     <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-a"></i>
-                    <div class="logo-text">Deepak Raj Gouda</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                 <div class="hero-pic">
-                    <img src="images/main_photo.jpg" alt="profile pic">
-                 </div>
-                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
-                    <h1>Deepak Raj Gouda</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta delectus dolorum 
-                        quibusdam maiores magni quod rem in porro, laborum, laudantium ex repellendus explicabo, 
-                        autem molestiae!
-                    </p>
-
-                    <div class="btn-group">
-                       <a href="./Deepak_Raj_Gouda.pdf" class="btn active">Download CV</a>
-                       <a href="#" class="btn">Contact</a>
-                    </div>
-
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
-                    </div>
-                 </div>
-            </div>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-user"></i>
+          <div class="logo-text">Deepak Raj Gouda</div>
         </div>
-     </div>
-     <!---typed js for typing text effect-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-     <script>
-        /** creating button click show hide navbar **/
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
+        <nav>
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
+      <div class="container">
+        <div class="hero-pic">
+          <img src="images/IMG_20200305_072640.jpg" alt="profile pic" />
+        </div>
+        <div class="hero-text">
+          <h5>Hi I'm <span class="input">Software Developer</span></h5>
+          <h1>Deepak Raj Gouda</h1>
+          <p>
+            Experienced software developer with a strong foundation in C++, OOPs, and Rust. Skilled in building efficient, scalable, and secure applications in Linux environments.
+          </p>
 
-        var typed=new Typed(".input",{
-            strings:["Frontend Developer","UX Designer","Web Developer"],
-            typedSpeed:70,
-            backSpeed:55,
-            loop:true
-        })
-     </script>
+          <div class="btn-group">
+            <a href="./Deepak_Raj_Gouda.pdf" class="btn active">Download CV</a>
+            <a href="#" class="btn">Contact</a>
+          </div>
+
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary Section -->
+      <div class="section">
+        <h2>Professional Summary</h2>
+        <ul>
+          <li>End-to-end experience in C++, OOPs, STL, Client/Server architecture in BFSI and Retail domains.</li>
+          <li>Experienced with Linux OS, Shell Scripting, and Rust integration using FFI and Cargo.</li>
+          <li>Proficient with Agile and Waterfall SDLC models.</li>
+          <li>Skilled in debugging and performance optimization using GDB, Valgrind, and modern C++ standards (C++11/14/17).</li>
+          <li>Hands-on with Git, Jira, and various IDEs and tools.</li>
+        </ul>
+      </div>
+
+      <!-- Technical Expertise -->
+      <div class="section">
+        <h2>Technical Expertise</h2>
+        <ul>
+          <li><strong>Languages:</strong> C, C++, Rust</li>
+          <li><strong>Web Tech:</strong> XML, JSON, Bootstrap, Tomcat</li>
+          <li><strong>Tools:</strong> Eclipse, MySQL Workbench, Git, Jira, VNC, Postman</li>
+          <li><strong>Databases:</strong> SQL, MySQL</li>
+          <li><strong>Protocols:</strong> TCP, UDP</li>
+          <li><strong>OS:</strong> Linux Red Hat, Windows</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+  <script>
+    var typed = new Typed(".input", {
+      strings: ["Software Developer"],
+      typeSpeed: 70,
+      backSpeed: 55,
+      loop: true,
+    });
+  </script>
 </body>
 </html>
