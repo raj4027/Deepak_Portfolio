@@ -1,0 +1,263 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffb6bf, #d4a283);
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #333333;
+}
+
+.hero-header {
+    position: relative;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ba4949;
+}
+
+.logo i {
+    margin-right: 8px;
+    color: #0f62fe;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #ca0d0d;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navlinks li a:hover {
+    color: #0f62fe;
+}
+
+.togglebtn {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.togglebtn span {
+    height: 3px;
+    width: 25px;
+    background: #2817bc;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero-pic img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #ffffffcc;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+.hero-pic img:hover {
+    transform: scale(1.05);
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-text h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #0f62fe;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #0f62fe;
+    color: #ffffff87;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0841a8;
+}
+
+.btn.active {
+    background: #28a745;
+}
+
+.social a {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #4d10b7fa;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #0f62fe;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-pic img {
+        margin-bottom: 25px;
+    }
+
+    .togglebtn {
+        display: flex;
+    }
+
+    .navlinks {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: #ffffff;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(72, 167, 24, 0.1);
+        transition: right 0.3s;
+    }
+
+    .navlinks.open {
+        right: 0;
+    }
+}
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffffcc;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 32px;
+    color: #0f62fe;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0f62fe;
+    padding-bottom: 10px;
+}
+
+.section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.section ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333333;
+    line-height: 1.6;
+}
+/* Background and overall layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+    color: #222222;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-card {
+    text-align: left;
+    padding: 30px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.profile-card h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0f62fe;
+    text-align: left;
+}
+
+.profile-card p {
+    font-size: 18px;
+    color: #444;
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #0f62fe;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0f62fe;
+    padding-bottom: 8px;
+    text-align: left;
+}

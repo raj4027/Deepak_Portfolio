@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa"></i>
+                    <div class="logo-text">Deepak Raj Gouda</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://deepak-portfolio-three-delta.vercel.app/#">Portfolio</a></li>
+                        <li><a href="Deepak_Raj_Gouda.pdf">Resume</a></li>
+                        <li><a href="7790033374">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/IMG_20200305_072640.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Backend Developer</span></h5>
+                    <h1>Deepak Raj Gouda</h1>
+                    <p>
+                        Experienced software developer with expertise in C++, Rust, and full-stack technologies.
+                        Skilled in building high-performance systems and collaborating on complex projects using Agile methodologies.
+
+                        I am adept at working in Agile/Scrum environments, using tools such as Git, Jira, and Postman, and managing projects across their lifecycle. My technical toolkit includes Linux shell scripting, MySQL, TCP/UDP protocols, and familiarity with development tools like GDB, Valgrind, and Cargo.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="./Deepak_Raj_Gouda.pdf" class="btn active">Download CV</a>
+                        <a href="7790033374" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social"> 
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/raj4027" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/deepak-raj-gouda-784413155/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Technical Expertise Section -->
+<div class="section">
+    <h2>Technical Expertise</h2>
+    <ul>
+        <li><strong>Languages:</strong>  C, C++, Rust, Shell Scripting, Python (basic)</li>
+        <li><strong>Web Technologies:</strong> XML, JSON, Bootstrap, Tomcat</li>
+        <li><strong>Tools & IDEs:</strong> Eclipse, MySQL Workbench, Git, Jira, VNC, Postman</li>
+        <li><strong>Databases:</strong> SQL, MySQL</li>
+        <li><strong>Protocols:</strong> TCP, UDP</li>
+        <li><strong>Operating Systems:</strong> Linux (Red Hat), Windows</li>
+    </ul>
+</div>
+<!-- Summary Section -->
+<div class="section">
+    <h2>Professional Experience</h2>
+
+    <h3>IBM – Software Developer Engineer </h3>
+    <ul>
+    <br>  
+
+    <li>Designed and maintained scalable serverless database solutions to support modern cloud-native applications, minimizing operational overhead.</li>
+      <li>Worked extensively with IBM DB2 for both OLTP and OLAP systems, optimizing performance through indexing, partitioning, and query tuning.</li>
+      <li>Developed and deployed stored procedures, triggers, and UDFs in DB2 to automate business logic and data workflows.</li>
+      <li>Managed role-based access control (RBAC), privileges, and user roles in DB2 to enforce data security and compliance.</li>
+      <li>Migrated legacy DB2 workloads to cloud-managed serverless DB environments, ensuring zero data loss and minimal downtime.</li>
+      <li>Monitored performance and performed load testing to ensure elasticity and cost-efficiency of serverless database configurations.
+    </li>
+    </ul>
+
+    <h3>HCL Technologies Ltd – Lead Engineer </h3>
+    <ul>
+    <br>  
+      <li>Utilized C++11/14/17 features including smart pointers, lambdas, and RAII for optimized code.</li>
+      <li>Integrated Rust code with C++ using FFI to enhance performance.</li>
+      <li>Debugged applications using GDB and Valgrind.</li>
+      <li>Used Git for version control and collaborative development.</li>
+    </ul>
+
+    <h3>CustomerXPS Software Pvt Ltd – Software Engineer </h3>
+    <ul>
+        <br>
+      <li>Developed C++ modules and managed memory efficiently using RAII and smart pointers.</li>
+      <li>Designed database schema and wrote performant queries using MySQL.</li>
+      <li>Created multithreaded apps and integrated Rust for safer concurrency handling.</li>
+      <li>Maintained platform compatibility across Linux and Windows.</li>
+    </ul>
+  </div>
+
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Software Developer", "Lead Engineer", "Software Devloper"],
+            typeSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+    </script>
+</body>
+</html>
